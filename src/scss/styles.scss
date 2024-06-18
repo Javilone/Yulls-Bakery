@@ -91,6 +91,10 @@ html {
 
 .carousel {
     background-color: black;
+
+    @media screen and (max-width: 720px){
+        padding-top: 30px;
+    }
 }
 
 // WAVE STYLES =====================================
