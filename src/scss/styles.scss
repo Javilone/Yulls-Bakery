@@ -113,6 +113,10 @@ html {
 .container-fluid {
     background-color: $color-background-2;
     margin-top: -2%;
+
+    @media screen and (max-width: 720px){
+        margin-top: -10%;
+    }
 }
 
 .main-content {
