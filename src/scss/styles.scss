@@ -61,6 +61,10 @@ html {
     @media screen and (max-width: 720px){
         width: 100%;
         font-size: 0.8rem;
+
+        img {
+            margin-left: -15px
+        }
     }
 }
 
