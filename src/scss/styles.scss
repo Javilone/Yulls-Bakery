@@ -1,0 +1,140 @@
+// Import all of Bootstrap's CSS
+@use "_base" as *;
+@import "bootstrap/scss/bootstrap";
+
+html {
+    background-color: $color-background-2;
+}
+
+.top-bar {
+    height: 46px;
+    width: 100%;
+    background-color: $color-background;
+
+    @media screen and (max-width: 1080px){
+        height: 20px;
+    }
+}
+
+.navbar {
+    background-color: black;
+    height: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 2000;
+    border-top: 3px solid $color-background;
+    border-style: dotted;
+}
+
+.menu {
+    display: flex;
+    height: 40px;
+    width: 50%;
+    background-color: black;
+    border-radius: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: Playwrite-PL;
+
+        &:hover{
+            color: $text-color-hover;
+        }
+    }
+
+    img {
+        width: 200px;
+        filter: drop-shadow(0px 4px 4px black);
+    }
+    
+    @media screen and (max-width: 1080px){
+        width: 60%;
+
+        img {
+            width: 130px;
+        }
+    }
+
+    @media screen and (max-width: 720px){
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}
+
+.dropdown-item {
+    width: 200px;
+
+    &:hover{
+        background-color: black;
+    }
+}
+
+.myBtn{
+    color: White;
+    font-family: Playwrite-PL;
+
+    &:hover{
+        color: $color-background-2;
+    }
+
+    @media screen and (max-width: 720px){
+        font-size: 0.8rem;
+    }
+}
+
+.carousel {
+    background-color: black;
+}
+
+// WAVE STYLES =====================================
+.custom-shape-divider-top-1718731153 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: $color-background-2;
+}
+
+.custom-shape-divider-top-1718731153 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 77px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1718731153 .shape-fill {
+    fill: #F7E4BB;
+}
+// END OF WAVE STYLES ==============================
+
+.container-fluid {
+    background-color: $color-background-2;
+    margin-top: -2%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    width: 100%;
+}
+
+.square-content{
+    width: 320px;
+    height: 400px;
+    border-radius: 30px;
+    border: 3px dotted black;
+    background-color: white;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: black;
+}
