@@ -11,15 +11,17 @@
       <div class="top-bar"></div>
       <div class="navbar">
         <div class="menu">
-          <a href="...">Inicio</a>
+          <a href="./index.html">Inicio</a>
           <div class="dropdown">
             <button class="btn dropdown-toggle myBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dulces
             </button>
             <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Tartas</a></li>
+              <li><a class="dropdown-item" href="#tartas">Tartas</a></li>
+              <li><a class="dropdown-item" href="#cupcakes">Cupcakes</a></li>
+              <li><a class="dropdown-item" href="#galletas">Galletas</a></li>
+              <li><a class="dropdown-item" href="#">Dulces</a></li>
               <li><a class="dropdown-item" href="#">Bollería</a></li>
-              <li><a class="dropdown-item" href="#">Pastelería</a></li>
             </ul>
           </div>
           <img src="img/yulls_bakery_logo.png" alt="Yulls Bakery Logo" />
@@ -64,14 +66,24 @@
         </svg>
     </div>
       <div class="container-fluid main-content">
-        <div class="square-content"></div>
-        <div class="square-content"></div>
-        <div class="square-content"></div>
-        <div class="square-content"></div>
-        <div class="square-content"></div>
-        <div class="square-content"></div>
-        <div class="square-content"></div>
-        <div class="square-content"></div>
+        <div class="square-content" id="tartas" role="region" aria-labelledby="tartas">
+          <div class="top-rating">⭐️⭐️⭐️</div>
+          <img class="img-content" src="./img/tartas/tarta01.jpg" alt="Imagen de tarta de chocolate" />
+          <h4>Tarta 3 chocolates</h4>
+          <p>Tarta con base de bizcocho de chocolate y bañada en 3 capas de chocolate</p>
+        </div>
+        <div class="square-content" id="tartas" role="region" aria-labelledby="tartas">
+          <div class="top-rating"></div>
+          <img class="img-content" src="./img/tartas/tarta02.jpg" alt="Imagen de tarta de colores" />
+          <h4>Tarta arcoiris</h4>
+          <p>Tarta con base de bizcocho. Decorada con capas de múltiples colores.</p>
+        </div>
+        <div class="square-content" id="tartas" role="region" aria-labelledby="tartas"></div>
+        <div class="square-content" id="tartas" role="region" aria-labelledby="tartas"></div>
+        <div class="square-content" id="cupcakes" role="region" aria-labelledby="cupcakes"></div>
+        <div class="square-content" id="cupcakes" role="region" aria-labelledby="cupcakes"></div>
+        <div class="square-content" id="cupcakes" role="region" aria-labelledby="cupcakes"></div>
+        <div class="square-content" id="galletas" role="region" aria-labelledby="galletas"></div>
       </div>
     </main>
     <footer>

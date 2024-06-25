@@ -6,6 +6,6 @@ import * as bootstrap from 'bootstrap'
 
 const myCarouselElement = document.querySelector('#carouselFade')
 const carousel = new bootstrap.Carousel(myCarouselElement, {
-    interval: 3000,
+    interval: 6000,
     touch: true
 })

@@ -3,7 +3,15 @@ $color-background-2: rgb(202, 70, 118);
 
 $text-color-hover: rgb(202, 70, 118);
 
+$font-family-normal: Playwrite-PL;
+
 @font-face {
     font-family: Playwrite-PL;
     src: url("../fonts/Playwrite_PL/PlaywritePL-VariableFont_wght.ttf");
+}
+
+@keyframes carrusel {
+    0% {transform: scale();}
+    50% {transform: scale(1.1);}
+    100% {transform: scale();}
 }
