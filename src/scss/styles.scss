@@ -163,7 +163,6 @@ body{
     padding: 6px;
     background-color: $color-background-3;
 
-
     &:hover {
         .item-price {
             color: black;
@@ -215,6 +214,10 @@ body{
     font-size: large;
     transition: 1s;
     color: transparent;
+
+    @media screen and (max-width: 1080px){
+        color: black;
+    }
 }
 
 // END OF PRODUCTS ==================================
