@@ -17,3 +17,10 @@ $font-family-second: 'Arial Narrow Bold', sans-serif;
     50% {transform: scale(1.1);}
     100% {transform: scale();}
 }
+
+@keyframes product-shaking {
+    0% {transform: translateX(0px);}
+    10% {transform: translateX(-7px);}
+    50% {transform: translateX(0px);}
+    100% {transform: translateX(0px);}
+}
