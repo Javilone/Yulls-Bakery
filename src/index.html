@@ -11,6 +11,7 @@
       <div class="top-bar"></div>
       <div class="navbar">
         <div class="menu">
+          <!-- PRODUCTS DROPDOWN -->
           <div class="dropdown">
             <button class="btn dropdown-toggle myBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dulces
@@ -22,10 +23,21 @@
               <li><a class="dropdown-item" href="#sweets">Galletas</a></li>
             </ul>
           </div>
-          <a href="./index.html">Blog</a>
+          <a href="#news" class="menu-hidden">Novedades</a>
           <img src="img/yulls_bakery_logo.png" alt="Yulls Bakery Logo" />
-          <a href="./index.html">Contacto</a>
-          <a href="./index.html">Redes</a>
+          <a href="./index.html" class="menu-hidden">Contacto</a>
+          <a href="./index.html" class="menu-hidden">Redes</a>
+          <!-- BURGER DROPDOWN -->
+          <div class="dropdown dropdown-hidden">
+            <button class="btn dropdown-toggle myBtn burger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <p>&#9776;</p> <!-- Símbolo de hamburguesa -->
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+              <li><a class="dropdown-item" href="#news">Novedades</a></li>
+              <li><a class="dropdown-item" href="./index.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="./index.html">Redes</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -228,9 +240,11 @@
     <div class="section-title" aria-labelledby="news" id="news" role="region"><h1>Novedades</h1></div>
       <div class="container-fluid news-section">
         <div class="accordion " id="accordionPanelsStayOpenExample">
+          <!-- NEWS 1 -->
           <div class="accordion-item">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                <h3>Novedades en Yull's Bakery: ¡Tarta San Marcos! 🍰</h3>
+            <h2>
+              <button class="accordion-button news-text-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Novedades en Yull's Bakery: ¡Tarta San Marcos! 🍰
               </button>
             </h2>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
@@ -248,24 +262,26 @@
               </div>
             </div>
           </div>
+          <!-- NEWS 2 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                <h3>¡Novedades Yull's Bakery!</h3>
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed news-text-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Algo muy especial para el Día de la Madre
               </button>
-            </h2>
+            </h3>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
               <div class="accordion-body">
                 <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
+          <!-- NEWS 3 -->
           <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                <h3>¡Novedades Yull's Bakery!</h3>
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed news-text-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                ¡Novedades Yull's Bakery!
               </button>
-            </h2>
+            </h3>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
               <div class="accordion-body">
                 <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
