@@ -4,6 +4,7 @@
 @import "_navbar";
 @import "_waves";
 @import "_product";
+@import "_news";
 
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -28,17 +29,9 @@ body{
     color: $color-background-3;
     background-color: $color-background-2;
     margin-bottom: 15px;
+    margin-top: 45px;
 }
 
-// NEWS SECTION ===================================
-
-.news-section{
-    height: 500px;
-    max-width: 1280px;
-    background-color: $color-background-3;
-}
-
-// END OF SECOND SECTION ============================
 
 .footer {
     height: 200px;
