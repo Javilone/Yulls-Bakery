@@ -30,6 +30,10 @@ body{
     background-color: $color-background-2;
     margin-bottom: 15px;
     margin-top: 45px;
+
+    @media screen and (max-width: 720px){
+        margin-top: 0px;
+    }
 }
 
 
