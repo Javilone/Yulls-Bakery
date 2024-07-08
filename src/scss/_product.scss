@@ -13,7 +13,7 @@
     margin-bottom: 64px;
     margin-top: 10px;
     font-family: $font-family-normal;
-
+    cursor: pointer;
 
     animation-name: product-shaking;
     animation-duration: 3s;
@@ -84,7 +84,8 @@
     width: 100%;
     height: 24px;
     position: sticky;
-    top: 0px;
+    top: 90%;
+    transform: translateX(40%);
     font-size: 32px;
     z-index: 2000;
     fill: pink;
@@ -92,7 +93,6 @@
     img {
         width: 40px;
         border-radius: 100%;
-        fill: pink;
     }
 
     &:hover{
