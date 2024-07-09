@@ -1,3 +1,5 @@
+@use "base" as *;
+
 .news-section{
     height: auto;
     max-width: 1420px;
@@ -46,4 +48,13 @@
 
 .news-img-container {
     width: 100%;
+    text-align: center;
+}
+
+.news-product-img{
+    @include product-img(40%);
+}
+
+.news-product-img-b{
+    @include product-img(58%);
 }

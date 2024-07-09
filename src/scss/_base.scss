@@ -10,6 +10,7 @@ $font-family-second: 'Arial Narrow Bold', sans-serif;
 
 $btn-buy-color-1: rgb(70, 118, 202);
 
+
 @font-face {
     font-family: Playwrite-PL;
     src: url("../fonts/Playwrite_PL/PlaywritePL-VariableFont_wght.ttf");
@@ -26,4 +27,18 @@ $btn-buy-color-1: rgb(70, 118, 202);
     10% {transform: translateX(-7px);}
     50% {transform: translateX(0px);}
     100% {transform: translateX(0px);}
+}
+
+@mixin product-img($img-size) {
+    width: $img-size;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 1s;
+
+    &:hover, &:active{
+        filter: contrast(1.3);
+        transform: scale(1.02);
+        transition: 0.7s;
+    }
 }
