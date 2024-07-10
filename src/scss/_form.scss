@@ -1,4 +1,16 @@
 .form-container{
+    position: relative ;
     height: auto;
     width: 50%;
+
+    @media screen and (max-width: 720px){
+        width: 90%;
+    }
+}
+
+.form-message-window{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 16px;
 }
