@@ -1,0 +1,41 @@
+.footer {
+    height: auto; 
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.footer{
+
+    h3 {
+    color: white;
+    font-family: $font-family-normal;
+    font-size: 18px;
+    margin: 0;
+    line-height: 50px;
+
+    @media screen and (max-width: 720px){
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    }
+}
+
+.footer-highlight {
+    color: $color-background-2;
+    font-size: 22px;
+
+    @media screen and (max-width: 720px){
+        font-size: 14px;
+    }
+}
+
+.footer-year {
+    font-size: 14px;
+}

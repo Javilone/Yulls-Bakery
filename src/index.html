@@ -29,7 +29,8 @@
             </ul>
           </div>
           <a href="#news" class="menu-hidden">Novedades</a>
-          <img src="img/yulls_bakery_logo.png" alt="Yulls Bakery Logo" />
+          <img src="img/yulls_bakery_logo.png" alt="Yulls Bakery Logo" 
+          aria-labelledby="logo" id="logo" role="region"/>
           <a href="#contact" class="menu-hidden">Contacto</a>
           <a href="./index.html" class="menu-hidden">Redes</a>
           <!-- BURGER DROPDOWN -->
@@ -46,6 +47,11 @@
         </div>
       </div>
     </header>
+    <div class="container">
+      <div class="goUp-btn">
+          <a href="#logo"><img src="./img/up-arrow.svg" alt="Flecha para subir la página" /></a>
+      </div>
+  </div>
     <main>
       <!-- CARROUSEL IMAGES -->
       <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="true">
@@ -101,7 +107,7 @@
             <br><br>Sorprende a mamá con este dulce y hermoso regalo, ideal para celebrar su día especial con amor y estilo.' 
             />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/tartas/tarta-flores-madres.jpeg" alt="Imagen de tarta de chocolate" />
+          <img class="item-product-img" loading="lazy" src="./img/tartas/tarta-flores-madres.jpeg" alt="Tarta artesana para el día de la madre. Con nata montada, tonos rosas y flores naturales" />
           <div class="item-name">Tarta Floral</div>
           <div class="item-price">Desde XX,XX€</div>
           <div class="item-buy-button">
@@ -127,7 +133,7 @@
             <br><br>Además, ofrecemos personalización con otros personajes favoritos. ¡Haz de tu evento un momento inolvidable con esta tarta personalizada!' 
             />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/tartas/tarta-personalizada-1.jpeg" alt="Imagen de tarta arcoiris" />
+          <img class="item-product-img" loading="lazy" src="./img/tartas/tarta-personalizada-1.jpeg" alt="Tarta con motivo infantil con la imagen de un dibujo animado en frosting" />
             
           <div class="item-name">Tarta Personalizada Infantil</div>
           <div class="item-price">Desde XX,XX€</div>
@@ -514,8 +520,7 @@
               <div class="accordion-body">
                 <div class="container-fluid news-container">
                   <div class="news-img-container">
-                  <img class="news-product-img" loading="lazy" src="./img/tartas//tarta-flores-madres.jpeg" />
-                  <img class="news-product-img-b" loading="lazy" src="./img/tartas//tarta-flores-madres.jpeg" />
+                  <img class="item-product-img" loading="lazy" src="./img/tartas/tarta-flores-madres.jpeg" />
                   </div>
                   <div class="news-text">Celebra el Día de la Madre con nuestra exclusiva Tarta de Rosas y Vainilla, diseñada para honrar a las mamás con elegancia y dulzura. 
                     <br><br>Esta hermosa tarta presenta capas esponjosas de bizcocho de vainilla, intercaladas con una suave crema de fresa. La cobertura, de un delicado frosting blanco, 
@@ -560,64 +565,37 @@
     </div>
     <div class="container-fluid form-container">
       <form action="https://javilonedev.es/index.php" 
-      method="post"
-      id="yullsForm">
-      <div class="mb-3">
-        <label for="name" class="form-label" required>Nombre</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="¿Cómo te llamas?">
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label" required>Email de contacto</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="tu_correo@electrónico.com">
-      </div>
-      <div class="mb-3">
-        <label for="order" class="form-label" required>Tu pedido</label>
-        <input type="text" class="form-control" id="order" name="order" placeholder="" />
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label" required>Escribe aquí tu consulta</label>
-        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
-      </div>
-      <input type="submit" class="btn btn-primary buy-btn" value="Enviar">
-      <div id="mensaje" class=""></div>
-    </form>
+        method="post"
+        id="yullsForm">
+        <div class="mb-3">
+          <label for="name" class="form-label" required>Nombre</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Escribe aquí tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label" required>Email de contacto</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="tu_correo@electrónico.com">
+        </div>
+        <div class="mb-3">
+          <label for="order" class="form-label" required>Tu pedido</label>
+          <input type="text" class="form-control" id="order" name="order" placeholder="Selecciona un producto o escribe aquí tu encargo" />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label" required>Escribe tu consulta</label>
+          <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+        </div>
+        <div class="submitBtn"><input type="submit" class="btn btn-primary buy-btn" value="Enviar"></div>
+        <div id="mensaje" class=""></div>
+      </form>
     </div>
     </main>
     <footer>
-      <div class="footer"></div>
+      <div class="footer">
+        <h3>Desarrollo y diseño de <span class="footer-highlight">Javilonedev</span>
+        para <span class="footer-highlight">Yull's Bakery</span>
+        <br><span class="footer-year">- 2024 -</span></h3>
+      </div>
     </footer>
     <script type="module" src="./js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-          $('#mensaje').addClass('form-message-window'); // Agregar la clase inicialmente
-          $('#mensaje').hide(); // Ocultar el mensaje inicialmente
-      
-          $('#yullsForm').submit(function(e) {
-              e.preventDefault(); // Evita que el formulario se envíe normalmente
-      
-              // Mostrar el contenedor mensaje antes de enviar la solicitud AJAX
-              $('#mensaje').show();
-      
-              // Envía el formulario usando AJAX
-              $.ajax({
-                  type: 'POST',
-                  url: 'https://javilonedev.es/index.php',
-                  data: $(this).serialize(), // Serializa los datos del formulario
-                  success: function(response) {
-                      // Manejar la respuesta del servidor aquí
-                      if (response.trim() === 'enviado') {
-                          $('#mensaje').html('<p>Mensaje enviado correctamente.</p>');
-                      } else {
-                          $('#mensaje').html('<p>Hubo un problema al enviar el mensaje.</p>');
-                      }
-                  },
-                  error: function() {
-                      $('#mensaje').html('<p>Error en el servidor. Inténtalo de nuevo más tarde.</p>');
-                  }
-              });
-          });
-      });
-      </script>
   </body>
 </html>

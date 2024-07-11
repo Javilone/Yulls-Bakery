@@ -6,6 +6,7 @@
 @import "_product";
 @import "_news";
 @import "_form";
+@import "_footer";
 
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -21,7 +22,6 @@ body{
         animation-name: carrusel;
         animation-duration: 6s;
     }
-
 }
 
 .section-title{
@@ -38,11 +38,22 @@ body{
     }
 }
 
+.goUp-btn {
+    display: none;
+    z-index: 1999; 
+    transition: width 0.3s ease;
 
-.footer {
-    height: 200px;
-    width: 100%;
-    background-color: black;
-    margin-top: 168px;
+    img {
+        width: 40px
+    }
 }
 
+.goUp-btn.fixed {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $color-background-4;
+    border-radius: 15px;
+    padding: 4px;
+}

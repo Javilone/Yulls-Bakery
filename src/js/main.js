@@ -5,9 +5,10 @@ import '../scss/styles.scss'
 import * as bootstrap from 'bootstrap'
 
 import './productsButtons.js';
+import './formHandles.js';
 
 
-// MAIN CAROUSEL
+// CAROUSEL
 const myCarouselElement = document.querySelector('#carouselFade')
 const carousel = new bootstrap.Carousel(myCarouselElement, {
     interval: 6000,
@@ -27,3 +28,21 @@ function messageWindowFunction() {
 
 messageWindow.addEventListener("click", messageWindowFunction);
 
+// BUTTON TO GO UP 
+const goUpBtn = document.querySelector('.goUp-btn');
+const upBtnInitialPos = goUpBtn.offsetTop + 250;
+
+// Función para verificar la posición de scroll
+function verificarScroll() {
+    // Obtiene la posición actual de scroll
+    const scrollY = window.scrollY || window.pageYOffset;
+
+    // Verifica si se ha hecho scroll hacia abajo más allá de la posición inicial
+    if (scrollY > upBtnInitialPos) {
+        goUpBtn.classList.add('fixed');
+    } else {
+        goUpBtn.classList.remove('fixed');
+    }
+}
+
+window.addEventListener('scroll', verificarScroll);
