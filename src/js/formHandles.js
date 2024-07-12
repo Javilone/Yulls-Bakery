@@ -24,7 +24,7 @@ $(document).ready(function () {
         // Envío el formulario usando AJAX
         $.ajax({
             type: 'POST',
-            url: 'https://javilonedev.es/index.php',
+            url: 'https://javilonedev.es/formhandler.php',
             data: $(this).serialize(), // Serializo los datos del formulario
             success: function(response) {
                 // Manejo de la respuesta del servidor
