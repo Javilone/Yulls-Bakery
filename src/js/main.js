@@ -8,13 +8,14 @@ import './productsButtons.js';
 import './formHandles.js';
 
 
-// CAROUSEL
+// MAIN CAROUSEL
 const myCarouselElement = document.querySelector('#carouselFade')
 const carousel = new bootstrap.Carousel(myCarouselElement, {
     interval: 6000,
     touch: true
 })
 
+// BOOTSTRAP DEPENDENCIES FOR POPOVER (EMERGENT POPUPS INFO)
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 

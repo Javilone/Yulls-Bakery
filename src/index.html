@@ -1,15 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="nameitem-name" 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="nameitem-name"
       content="Deliciosas tartas, muffins y dulces artesanales hechos con amor. 
               Descubre nuestras especialidades y personaliza tu pedido para cualquier ocasión especial. 
-              ¡Haz tu día más dulce con Yulls!">
-    <meta name="author" content="John Doe">
+              ¡Haz tu día más dulce con Yulls!"
+    />
+    <meta name="author" content="John Doe" />
     <title>Yulls Bakery - Tartas y dulces artesanales en Madrid.</title>
-    <link rel="stylesheet" href="./scss/styles.scss">
+    <link rel="stylesheet" href="./scss/styles.scss" />
   </head>
   <body>
     <header>
@@ -18,7 +20,12 @@
         <div class="menu">
           <!-- PRODUCTS DROPDOWN -->
           <div class="dropdown">
-            <button class="btn dropdown-toggle myBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button
+              class="btn dropdown-toggle myBtn"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Dulces
             </button>
             <ul class="dropdown-menu dropdown-menu-dark">
@@ -29,19 +36,32 @@
             </ul>
           </div>
           <a href="#news" class="menu-hidden">Novedades</a>
-          <img src="img/yulls_bakery_logo.png" alt="Yulls Bakery Logo" 
-          aria-labelledby="logo" id="logo" role="region"/>
+          <img
+            src="img/yulls_bakery_logo.png"
+            alt="Yulls Bakery Logo"
+            aria-labelledby="logo"
+            id="logo"
+            role="region"
+          />
           <a href="#contact" class="menu-hidden">Contacto</a>
           <a href="#information" class="menu-hidden">Información</a>
           <!-- BURGER DROPDOWN -->
           <div class="dropdown dropdown-hidden">
-            <button class="btn dropdown-toggle myBtn burger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <p>&#9776;</p> <!-- Símbolo de hamburguesa -->
+            <button
+              class="btn dropdown-toggle myBtn burger"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <p>&#9776;</p>
+              <!-- Símbolo de hamburguesa -->
             </button>
             <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
               <li><a class="dropdown-item" href="#news">Novedades</a></li>
               <li><a class="dropdown-item" href="#contact">Contacto</a></li>
-              <li><a class="dropdown-item" href="#information">Información</a></li>
+              <li>
+                <a class="dropdown-item" href="#information">Información</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -49,462 +69,714 @@
     </header>
     <div class="container">
       <div class="goUp-btn">
-          <a href="#logo"><img src="./img/up-arrow.svg" alt="Flecha para subir la página" /></a>
+        <a href="#logo"
+          ><img src="./img/up-arrow.svg" alt="Flecha para subir la página"
+        /></a>
       </div>
-  </div>
+    </div>
     <main>
       <!-- CARROUSEL IMAGES -->
-      <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="true">
+      <div
+        id="carouselFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="true"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/carrousel/frederick-medina-J8uTXtVbEbw-unsplash-2.jpg" class="d-block w-100" alt="...">
+            <img
+              src="./img/carrousel/frederick-medina-J8uTXtVbEbw-unsplash-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
           <div class="carousel-item">
-            <img src="./img/carrousel/american-heritage-chocolate-vdx5hPQhXFk-unsplash-2-2.jpg" class="d-block w-100" alt="...">
+            <img
+              src="./img/carrousel/american-heritage-chocolate-vdx5hPQhXFk-unsplash-2-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
           <div class="carousel-item">
-            <img src="./img/carrousel/austin-moncada-JHMG8eWbTfs-unsplash-2.jpg" class="d-block w-100" alt="...">
+            <img
+              src="./img/carrousel/austin-moncada-JHMG8eWbTfs-unsplash-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
           <div class="carousel-item">
-            <img src="./img/carrousel/henrik-hjortshoj-XtYPjMTNQUA-unsplash-2.jpg" class="d-block w-100" alt="...">
+            <img
+              src="./img/carrousel/henrik-hjortshoj-XtYPjMTNQUA-unsplash-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
           <div class="carousel-item">
-            <img src="./img/carrousel/shivansh-sethi-dKT6Q7q2UKs-unsplash-2.jpg" class="d-block w-100" alt="...">
+            <img
+              src="./img/carrousel/shivansh-sethi-dKT6Q7q2UKs-unsplash-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselFade"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselFade"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
       <div class="custom-shape-divider-top-1718731153">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
         </svg>
       </div>
-    <!-- CAKES SCROLL -->
-      <div class="section-title" aria-labelledby="tartas" id="tartas" role="region"><h1>Tartas</h1></div>
+      <!-- CAKES SCROLL -->
+      <div
+        class="section-title"
+        aria-labelledby="tartas"
+        id="tartas"
+        role="region"
+      >
+        <h1>Tartas</h1>
+      </div>
       <div class="container-fluid product-container">
         <!-- ITEM 1 -->
         <div class="product-item">
           <div class="top-info">
-            <img src="./img/info-icon.svg" 
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            tabindex="0"
-            data-bs-trigger="focus"
-            data-bs-html="true"
-            data-bs-content='Descubre la tarta perfecta para el Día de la Madre. 
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Descubre la tarta perfecta para el Día de la Madre. 
             <br><br>Una base esponjosa de bizcocho se combina con la suavidad de la nata montada y el delicioso toque de la fresa. 
             <br>Cada rebanada es una explosión de sabor, envuelta en una presentación elegante y delicada. Una cinta adornada con flores naturales rosadas rodea la tarta, aportando un toque de frescura y distinción. 
-            <br><br>Sorprende a mamá con este dulce y hermoso regalo, ideal para celebrar su día especial con amor y estilo.' 
+            <br><br>Sorprende a mamá con este dulce y hermoso regalo, ideal para celebrar su día especial con amor y estilo."
+            />
+            <img
+              src="./img/gluten-free-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Opción sin gluten disponible"
             />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/tartas/tarta-flores-madres.jpeg" alt="Tarta artesana para el día de la madre. Con nata montada, tonos rosas y flores naturales" />
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/tartas/tarta-flores-madres.jpeg"
+            alt="Tarta artesana para el día de la madre. Con nata montada, tonos rosas y flores naturales"
+          />
           <div class="item-name">Tarta Floral</div>
           <div class="item-price">Desde XX,XX€</div>
           <div class="item-buy-button">
-            <a href="./index.html#contact" 
-            class="btn btn-primary buy-btn" 
-            id="cakeBtn1" 
-            title="Tarta Floral">¡La quiero!</a>
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cakeBtn1"
+              title="Tarta Floral"
+              >¡La quiero!</a
+            >
           </div>
         </div>
         <!-- ITEM 2 -->
         <div class="product-item">
           <div class="top-info">
-            <img src="./img/info-icon.svg" 
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            tabindex="0"
-            data-bs-trigger="focus"
-            data-bs-html="true"
-            data-bs-content='Tarta infantil temática, ¡perfecta para cualquier celebración! 
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Tarta infantil temática, ¡perfecta para cualquier celebración! 
             <br>Con una base de esponjoso bizcocho de vainilla y capas generosas, está cubierta con un suave y cremoso buttercream. El frosting representa al personaje que desees, usando detalles en fondant y glaseado para una apariencia auténtica. 
             <br><br>Esta deliciosa y visualmente atractiva tarta es ideal para alegrar cualquier fiesta infantil. 
-            <br><br>Además, ofrecemos personalización con otros personajes favoritos. ¡Haz de tu evento un momento inolvidable con esta tarta personalizada!' 
+            <br><br>Además, ofrecemos personalización con otros personajes favoritos. ¡Haz de tu evento un momento inolvidable con esta tarta personalizada!"
             />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/tartas/tarta-personalizada-1.jpeg" alt="Tarta con motivo infantil con la imagen de un dibujo animado en frosting" />
-            
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/tartas/tarta-personalizada-1.jpeg"
+            alt="Tarta con motivo infantil con la imagen de un dibujo animado en frosting"
+          />
+
           <div class="item-name">Tarta Personalizada Infantil</div>
           <div class="item-price">Desde XX,XX€</div>
           <div class="item-buy-button">
-            <a href="./index.html#contact" 
-            class="btn btn-primary buy-btn" 
-            id="cakeBtn2" 
-            title="Tarta Personalizada Infantil">¡La quiero!</a>
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cakeBtn2"
+              title="Tarta Personalizada Infantil"
+              >¡La quiero!</a
+            >
           </div>
         </div>
         <!-- ITEM 3 -->
         <div class="product-item">
           <div class="top-info">
-            <img src="./img/info-icon.svg" 
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            tabindex="0"
-            data-bs-trigger="focus"
-            data-bs-html="true"
-            data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
-              y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
-              />
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Celebra con nuestra tarta de cumpleaños de zanahoria y queso crema, una delicia que combina pastel esponjoso y relleno cremoso. 
+              <br><br>Envuelta en una elegante crema rosa y decorada con flores delicadas, esta tarta culmina con una corona Happy Birthday en la cima. 
+              Ideal para ocasiones especiales, ofrece un sabor irresistible y una presentación deslumbrante que hará que tu celebración sea inolvidable. 
+              <br><br>¡Haz que cada momento cuente!"
+            />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/tartas/tarta03.jpg" alt="Imagen de tarta de chocolate" />
-          <div class="item-name">Tarta San Marcos</div>
-          <div class="item-price">Desde 34,99€</div>
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/tartas/tarta-cumpleaños.jpeg"
+            alt="Imagen de tarta de cumpleañose"
+          />
+          <div class="item-name">Tarta de cumpleaños</div>
+          <div class="item-price">Desde XX,XX€</div>
           <div class="item-buy-button">
-            <a href="./index.html#contact" 
-            class="btn btn-primary buy-btn" 
-            id="cakeBtn3" 
-            title="Tarta San Marcos">¡La quiero!</a>
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cakeBtn3"
+              title="Tarta de cumpleaños"
+              >¡La quiero!</a
+            >
           </div>
         </div>
         <!-- ITEM 4 -->
         <div class="product-item">
           <div class="top-info">
-            <img src="./img/info-icon.svg" 
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            tabindex="0"
-            data-bs-trigger="focus"
-            data-bs-html="true"
-            data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
-              y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
-              />
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Disfruta de nuestra espectacular tarta de bizcocho de chocolate de 3 pisos, una delicia para los amantes del cacao. 
+              <br><br>Cada capa está rellena con una rica crema de chocolate, que proporciona una textura suave y un sabor intenso. 
+              La tarta está coronada con moras rojas y negras, que no solo añaden un toque fresco y afrutado, sino también una presentación elegante y apetecible. 
+              <br><br>Ideal para cualquier celebración."
+            />
+            <img
+              src="./img/gluten-free-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Opción sin gluten disponible"
+            />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/tartas/tarta04.jpg" alt="Imagen de tarta de chocolate" />
-          <div class="item-name">Tarta de Queso <br>con arándanos</div>
-          <div class="item-price">Desde 34,99€</div>
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/tartas/Tarta-chocolate-3pisos.jpeg"
+            alt="Imagen de tarta de chocolate"
+          />
+          <div class="item-name">Tarta de chocolate 3 pisos</div>
+          <div class="item-price">Desde XX,XX€</div>
           <div class="item-buy-button">
-            <a href="./index.html#contact" 
-            class="btn btn-primary buy-btn" 
-            id="cakeBtn4" 
-            title="Tarta de Queso y Arándanos">¡La quiero!</a>
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cakeBtn4"
+              title="Tarta de chocolate 3 pisos"
+              >¡La quiero!</a
+            >
           </div>
         </div>
         <!-- ITEM 5 -->
         <div class="product-item">
           <div class="top-info">
-            <img src="./img/info-icon.svg" 
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            tabindex="0"
-            data-bs-trigger="focus"
-            data-bs-html="true"
-            data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
               y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
-              />
+              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial."
+            />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/tartas/tarta02.jpg" alt="Imagen de tarta de chocolate" />
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/tartas/tarta02.jpg"
+            alt="Imagen de tarta de chocolate"
+          />
           <div class="item-name">Tarta Arcoiris</div>
           <div class="item-price">Desde 34,99€</div>
           <div class="item-buy-button">
-            <a href="./index.html#contact" 
-            class="btn btn-primary buy-btn"
-            id="cakeBtn5" 
-            title="Tarta Arcoiris">¡La quiero!</a>
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cakeBtn5"
+              title="Tarta Arcoiris"
+              >¡La quiero!</a
+            >
           </div>
         </div>
       </div>
-    <!-- CUPCAKES SCROLL -->
-      <div class="section-title" aria-labelledby="cupcakes" id="cupcakes" role="region"><h1>Cupcakes</h1></div>
+      <!-- CUPCAKES SCROLL -->
+      <div
+        class="section-title"
+        aria-labelledby="cupcakes"
+        id="cupcakes"
+        role="region"
+      >
+        <h1>Cupcakes</h1>
+      </div>
       <div class="container-fluid product-container">
         <!-- ITEM 1 -->
         <div class="product-item">
           <div class="top-info">
-            <img src="./img/info-icon.svg" 
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            tabindex="0"
-            data-bs-trigger="focus"
-            data-bs-html="true"
-            data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
               y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
-              />
+              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial."
+            />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/cupcakes/cupcakes-colores-1.jpeg" alt="Cupcakes de colores para el Orgullo" />
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/cupcakes/cupcakes-colores-1.jpeg"
+            alt="Cupcakes de colores para el Orgullo"
+          />
           <div class="item-name">Cupcakes de colores 🌈</div>
           <div class="item-price">Desde XX,XX€</div>
           <div class="item-buy-button">
-            <a href="./index.html#contact" 
-            class="btn btn-primary buy-btn"
-            id="cupCakeBtn1"
-            title="Cupcakes de colores 🌈">¡Los quiero!</a>
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cupCakeBtn1"
+              title="Cupcakes de colores 🌈"
+              >¡Los quiero!</a
+            >
           </div>
         </div>
         <!-- ITEM 2 -->
         <div class="product-item">
           <div class="top-info">
-            <img src="./img/info-icon.svg" 
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            tabindex="0"
-            data-bs-trigger="focus"
-            data-bs-html="true"
-            data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
               y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
-              />
+              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial."
+            />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/cupcakes/cupcake02.jpg" alt="Imagen de tarta arcoiris" />
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/cupcakes/cupcake02.jpg"
+            alt="Imagen de tarta arcoiris"
+          />
           <div class="item-name">Cupcake Fiesta Nube</div>
           <div class="item-price">Desde 39,99€</div>
           <div class="item-buy-button">
-            <a href="./index.html#contact" 
-            class="btn btn-primary buy-btn"
-            id="cupCakeBtn2"
-            title="Cupcake Fiesta Nube">¡Los quiero!</a>
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cupCakeBtn2"
+              title="Cupcake Fiesta Nube"
+              >¡Los quiero!</a
+            >
           </div>
         </div>
         <!-- ITEM 3 -->
         <div class="product-item">
           <div class="top-info">
-            <img src="./img/info-icon.svg" 
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            tabindex="0"
-            data-bs-trigger="focus"
-            data-bs-html="true"
-            data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
               y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
-              />
+              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial."
+            />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/cupcakes/cupcake03.jpg" alt="Imagen de tarta de chocolate" />
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/cupcakes/cupcake03.jpg"
+            alt="Imagen de tarta de chocolate"
+          />
           <div class="item-name">Cupcake Velvet</div>
           <div class="item-price">Desde 34,99€</div>
           <div class="item-buy-button">
-            <a href="./index.html#contact" 
-            class="btn btn-primary buy-btn"
-            id="cupCakeBtn3"
-            title="Cupcake Velvet"
-            >¡Los quiero!</a>
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cupCakeBtn3"
+              title="Cupcake Velvet"
+              >¡Los quiero!</a
+            >
           </div>
         </div>
         <!-- ITEM 4 -->
         <div class="product-item">
           <div class="top-info">
-            <img src="./img/info-icon.svg" 
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            tabindex="0"
-            data-bs-trigger="focus"
-            data-bs-html="true"
-            data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
               y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
-              />
+              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial."
+            />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/cupcakes/cupcake04.jpg" alt="Imagen de tarta de chocolate" />
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/cupcakes/cupcake04.jpg"
+            alt="Imagen de tarta de chocolate"
+          />
           <div class="item-name">Cupcake Fresa</div>
           <div class="item-price">Desde 34,99€</div>
           <div class="item-buy-button">
-            <a href="./index.html#contact" 
-            class="btn btn-primary buy-btn"
-            id="cupCakeBtn4"
-            title="Cupcake Fresa"
-            >¡Los quiero!</a>
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cupCakeBtn4"
+              title="Cupcake Fresa"
+              >¡Los quiero!</a
+            >
           </div>
         </div>
         <!-- ITEM 5 -->
         <div class="product-item">
           <div class="top-info">
-            <img src="./img/info-icon.svg" 
-            data-bs-container="body"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-            tabindex="0"
-            data-bs-trigger="focus"
-            data-bs-html="true"
-            data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
               y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
-              />
+              Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial."
+            />
           </div>
-          <img class="item-product-img" loading="lazy" src="./img/cupcakes/cupcake02.jpg" alt="Imagen de tarta arcoiris" />
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/cupcakes/cupcake02.jpg"
+            alt="Imagen de tarta arcoiris"
+          />
           <div class="item-name">Cupcake Fiesta Nube</div>
           <div class="item-price">Desde 39,99€</div>
           <div class="item-buy-button">
-            <a href="./index.html#contact" 
-            class="btn btn-primary buy-btn"
-            id="cupCakeBtn5"
-            title="Cupcake Fiesta Nube"
-            >¡Los quiero!</a>
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cupCakeBtn5"
+              title="Cupcake Fiesta Nube"
+              >¡Los quiero!</a
+            >
           </div>
         </div>
       </div>
-    <!-- COOKIES AND SWEETS SCROLL -->
-    <div class="section-title" aria-labelledby="sweets" id="sweets" role="region"><h1>Dulces y galletas</h1></div>
-    <div class="container-fluid product-container">
-      <!-- ITEM 1 -->
-      <div class="product-item">
-        <div class="top-info">
-          <img src="./img/info-icon.svg" 
-          data-bs-container="body"
-          data-bs-toggle="popover"
-          data-bs-placement="bottom"
-          tabindex="0"
-          data-bs-trigger="focus"
-          data-bs-html="true"
-          data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
-            y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-            Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
-            />
-        </div>
-        <img class="item-product-img" loading="lazy" src="./img/cookies_sweets/cookie01.jpg" alt="Imagen de tarta de chocolate" />
-        <div class="item-name">Coockies rellenas de nata</div>
-        <div class="item-price">Desde 34,99€</div>
-        <div class="item-buy-button">
-          <a href="./index.html#contact" 
-          class="btn btn-primary buy-btn"
-          id="cookiesBtn1"
-          title="Cookies rellenas de nata">¡Las quiero!</a>
-        </div>
+      <!-- COOKIES AND SWEETS SCROLL -->
+      <div
+        class="section-title"
+        aria-labelledby="sweets"
+        id="sweets"
+        role="region"
+      >
+        <h1>Dulces y galletas</h1>
       </div>
-      <!-- ITEM 2 -->
-      <div class="product-item">
-        <div class="top-info">
-          <img src="./img/info-icon.svg" 
-          data-bs-container="body"
-          data-bs-toggle="popover"
-          data-bs-placement="bottom"
-          tabindex="0"
-          data-bs-trigger="focus"
-          data-bs-html="true"
-          data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
-            y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-            Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
+      <div class="container-fluid product-container">
+        <!-- ITEM 1 -->
+        <div class="product-item">
+          <div class="top-info">
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Con una textura crujiente por fuera y suave por dentro, están repletas de trozos generosos de chocolate que se derriten deliciosamente. 
+              <br>Perfectas para cualquier ocasión, estas galletas combinan el sabor intenso del cacao con el dulzor justo, ofreciendo una experiencia de galleta 
+              casera que encantará a todos. <br><br>¡Un imprescindible para los amantes del chocolate!"
             />
+          </div>
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/cookies_sweets/cookies01.jpeg"
+            alt="Imagen de cookies clásicas de chocolate"
+          />
+          <div class="item-name">Coockies de chocolate</div>
+          <div class="item-price">Desde X,XX€</div>
+          <div class="item-buy-button">
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cookiesBtn1"
+              title="Cookies clásicas de chocolate"
+              >¡Las quiero!</a
+            >
+          </div>
         </div>
-        <img class="item-product-img" loading="lazy" src="./img/cookies_sweets/cookie02.jpg" alt="Imagen de tarta de chocolate" />
-        <div class="item-name">Cookies de chocolate</div>
-        <div class="item-price">Desde 34,99€</div>
-        <div class="item-buy-button">
-          <a href="./index.html#contact" 
-          class="btn btn-primary buy-btn"
-          id="cookiesBtn2"
-          title="Cookies de chocolate">¡Las quiero!</a>
-        </div>
-      </div>
-      <!-- ITEM 3 -->
-      <div class="product-item">
-        <div class="top-info">
-          <img src="./img/info-icon.svg" 
-          data-bs-container="body"
-          data-bs-toggle="popover"
-          data-bs-placement="bottom"
-          tabindex="0"
-          data-bs-trigger="focus"
-          data-bs-html="true"
-          data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
-            y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-            Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
+        <!-- ITEM 2 -->
+        <div class="product-item">
+          <div class="top-info">
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Las galletas de avena son un deleite saludable y sabroso. Con una textura crujiente por fuera y tierna por dentro, 
+              están repletas de avena integral que ofrece un sabor ligeramente endulzado, con un toque sutil de canela para realzar su sabor natural.  
+              <br><br>Perfectas para un bocadillo nutritivo y delicioso, estas galletas son ideales para cualquier momento del día."
             />
+          </div>
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/cookies_sweets/cookies02.jpeg"
+            alt="Imagen de galletas de avena"
+          />
+          <div class="item-name">Galletas de avena</div>
+          <div class="item-price">Desde X,XX</div>
+          <div class="item-buy-button">
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cookiesBtn2"
+              title="Galletas de avena"
+              >¡Las quiero!</a
+            >
+          </div>
         </div>
-        <img class="item-product-img" loading="lazy" src="./img/cupcakes/cupcake03.jpg" alt="Imagen de tarta de chocolate" />
-        <div class="item-name">Cupcake Velvet</div>
-        <div class="item-price">Desde 34,99€</div>
-        <div class="item-buy-button">
-          <a href="./index.html#contact" 
-          class="btn btn-primary buy-btn"
-          id="cookiesBtn3"
-          title="Cupcake Velvet">¡Los quiero!</a>
-        </div>
-      </div>
-      <!-- ITEM 4 -->
-      <div class="product-item">
-        <div class="top-info">
-          <img src="./img/info-icon.svg" 
-          data-bs-container="body"
-          data-bs-toggle="popover"
-          data-bs-placement="bottom"
-          tabindex="0"
-          data-bs-trigger="focus"
-          data-bs-html="true"
-          data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
+        <!-- ITEM 3 -->
+        <div class="product-item">
+          <div class="top-info">
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
             y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
-            Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.' 
+            Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial."
             />
+          </div>
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/cupcakes/cupcake03.jpg"
+            alt="Imagen de tarta de chocolate"
+          />
+          <div class="item-name">Cupcake Velvet</div>
+          <div class="item-price">Desde 34,99€</div>
+          <div class="item-buy-button">
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cookiesBtn3"
+              title="Cupcake Velvet"
+              >¡Los quiero!</a
+            >
+          </div>
         </div>
-        <img class="item-product-img" loading="lazy" src="./img/cupcakes/cupcake04.jpg" alt="Imagen de tarta de chocolate" />
-        <div class="item-name">Cupcake Fresa</div>
-        <div class="item-price">Desde 34,99€</div>
-        <div class="item-buy-button">
-          <a href="./index.html#contact" 
-          class="btn btn-primary buy-btn"
-          id="cookiesBtn4"
-          title="Cupcake Fresa">¡Los quiero!</a>
+        <!-- ITEM 4 -->
+        <div class="product-item">
+          <div class="top-info">
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content="Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
+            y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
+            Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial."
+            />
+          </div>
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/cupcakes/cupcake04.jpg"
+            alt="Imagen de tarta de chocolate"
+          />
+          <div class="item-name">Cupcake Fresa</div>
+          <div class="item-price">Desde 34,99€</div>
+          <div class="item-buy-button">
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cookiesBtn4"
+              title="Cupcake Fresa"
+              >¡Los quiero!</a
+            >
+          </div>
         </div>
-      </div>
-      <!-- ITEM 5 -->
-      <div class="product-item">
-        <div class="top-info">
-          <img src="./img/info-icon.svg" 
-          data-bs-container="body"
-          data-bs-toggle="popover"
-          data-bs-placement="bottom"
-          tabindex="0"
-          data-bs-trigger="focus"
-          data-bs-html="true"
-          data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
+        <!-- ITEM 5 -->
+        <div class="product-item">
+          <div class="top-info">
+            <img
+              src="./img/info-icon.svg"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="bottom"
+              tabindex="0"
+              data-bs-trigger="focus"
+              data-bs-html="true"
+              data-bs-content='Sumérgete en un mundo de colores y sabores con nuestra espectacular Tarta de Arcoíris. Se compone de capas esponjosas 
             y vibrantes en cada tono del arcoíris, unidas por una suave crema de vainilla. Decorada con un delicado frosting blanco y coloridos confites. 
             Un deleite visual y de sabor. Perfecta para celebrar cualquier ocasión especial.
           <br>
-          <a href="./index.html" class="btn btn-primary buy-btn">¡La quiero!</a>' />
-        </div>
-        <img class="item-product-img" loading="lazy" src="./img/cookies_sweets/cookie01.jpg" alt="Imagen de tarta de chocolate" />
-        <div class="item-name">Coockies rellenas</div>
-        <div class="item-price">Desde 34,99€</div>
-        <div class="item-buy-button">
-          <a href="./index.html#contact" 
-          class="btn btn-primary buy-btn"
-          id="cookiesBtn5"
-          title="Cookies rellenas de nata">¡Las quiero!</a>
+          <a href="./index.html" class="btn btn-primary buy-btn">¡La quiero!</a>'
+            />
+          </div>
+          <img
+            class="item-product-img"
+            loading="lazy"
+            src="./img/cookies_sweets/cookieExample1.jpg"
+            alt="Imagen de tarta de chocolate"
+          />
+          <div class="item-name">Coockies rellenas</div>
+          <div class="item-price">Desde 34,99€</div>
+          <div class="item-buy-button">
+            <a
+              href="./index.html#contact"
+              class="btn btn-primary buy-btn"
+              id="cookiesBtn5"
+              title="Cookies rellenas de nata"
+              >¡Las quiero!</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <!-- NEWS -->
-    <div class="section-title" aria-labelledby="news" id="news" role="region"><h1>Novedades</h1></div>
+      <!-- NEWS -->
+      <div class="section-title" aria-labelledby="news" id="news" role="region">
+        <h1>Novedades</h1>
+      </div>
       <div class="container-fluid news-section">
-        <div class="accordion " id="accordionPanelsStayOpenExample">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
           <!-- NEWS 1 -->
           <div class="accordion-item">
             <h2>
-              <button class="accordion-button news-text-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              <button
+                class="accordion-button news-text-title"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
                 Novedades en Yull's Bakery: ¡Cupcakes festivos de colores! 🌈
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+            >
               <div class="accordion-body">
                 <div class="container-fluid news-container">
                   <div class="news-img-container">
-                  <img class="item-product-img" loading="lazy" src="./img/cupcakes/cupcakes-colores-1.jpeg" />
+                    <img
+                      class="item-product-img"
+                      loading="lazy"
+                      src="./img/cupcakes/cupcakes-colores-1.jpeg"
+                    />
                   </div>
-                  <div class="news-text">¡Celebra el orgullo con nuestros vibrantes cupcakes de colores! 
-                    <br><br>Cada cupcake está cuidadosamente horneado con una base esponjosa y decorado con un delicioso frosting de mantequilla, teñido en los colores del arco iris. 
-                    Estos cupcakes no solo son una delicia para el paladar, sino también una explosión de alegría visual, perfectos para cualquier evento del Orgullo LGBTQ+. 
-                    <br><br>Con su sabor irresistible y su aspecto festivo, son ideales para compartir con amigos y seres queridos. 
-                    Además, cada compra apoya la inclusión y la diversidad. 
-                    <br><br>¡Haz de tu celebración del orgullo un evento aún más especial con nuestros cupcakes coloridos!</div>
+                  <div class="news-text">
+                    ¡Celebra el orgullo con nuestros vibrantes cupcakes de
+                    colores! <br /><br />Cada cupcake está cuidadosamente
+                    horneado con una base esponjosa y decorado con un delicioso
+                    frosting de mantequilla, teñido en los colores del arco
+                    iris. Estos cupcakes no solo son una delicia para el
+                    paladar, sino también una explosión de alegría visual,
+                    perfectos para cualquier evento del Orgullo LGBTQ+.
+                    <br /><br />Con su sabor irresistible y su aspecto festivo,
+                    son ideales para compartir con amigos y seres queridos.
+                    Además, cada compra apoya la inclusión y la diversidad.
+                    <br /><br />¡Haz de tu celebración del orgullo un evento aún
+                    más especial con nuestros cupcakes coloridos!
+                  </div>
                 </div>
               </div>
             </div>
@@ -512,20 +784,42 @@
           <!-- NEWS 2 -->
           <div class="accordion-item">
             <h3 class="accordion-header">
-              <button class="accordion-button news-text-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+              <button
+                class="accordion-button news-text-title"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
                 🌹 Algo muy especial para el Día de la Madre 🌹
               </button>
             </h3>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse show"
+            >
               <div class="accordion-body">
                 <div class="container-fluid news-container">
                   <div class="news-img-container">
-                  <img class="item-product-img" loading="lazy" src="./img/tartas/tarta-flores-madres.jpeg" />
+                    <img
+                      class="item-product-img"
+                      loading="lazy"
+                      src="./img/tartas/tarta-flores-madres.jpeg"
+                    />
                   </div>
-                  <div class="news-text">Celebra el Día de la Madre con nuestra exclusiva Tarta de Rosas y Vainilla, diseñada para honrar a las mamás con elegancia y dulzura. 
-                    <br><br>Esta hermosa tarta presenta capas esponjosas de bizcocho de vainilla, intercaladas con una suave crema de fresa. La cobertura, de un delicado frosting blanco, 
-                    está finamente decorada con toques de rosa y adornada con flores reales, aportando un toque de belleza natural y fragante. 
-                    <br>Cada bocado es una combinación perfecta de sabor y sofisticación, haciendo de esta tarta el regalo ideal para demostrar tu amor y aprecio en este día tan especial.
+                  <div class="news-text">
+                    Celebra el Día de la Madre con nuestra exclusiva Tarta de
+                    Rosas y Vainilla, diseñada para honrar a las mamás con
+                    elegancia y dulzura. <br /><br />Esta hermosa tarta presenta
+                    capas esponjosas de bizcocho de vainilla, intercaladas con
+                    una suave crema de fresa. La cobertura, de un delicado
+                    frosting blanco, está finamente decorada con toques de rosa
+                    y adornada con flores reales, aportando un toque de belleza
+                    natural y fragante. <br />Cada bocado es una combinación
+                    perfecta de sabor y sofisticación, haciendo de esta tarta el
+                    regalo ideal para demostrar tu amor y aprecio en este día
+                    tan especial.
                   </div>
                 </div>
               </div>
@@ -534,17 +828,40 @@
           <!-- NEWS 3 -->
           <div class="accordion-item">
             <h3 class="accordion-header">
-              <button class="accordion-button news-text-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
-                🧁 ¡Nuevos muffins! 
+              <button
+                class="accordion-button news-text-title"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                🧁 ¡Nuevos muffins!
               </button>
             </h3>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse show"
+            >
               <div class="accordion-body">
                 <div class="container-fluid news-container">
-                  <img class="item-product-img" loading="lazy" src="./img/cupcakes/cupcake04.jpg" />
-                  <div class="news-text">Presentamos nuestros nuevos Muffins de Fresa, una delicia que encantará a todos. 
-                    <br><br>Estos esponjosos muffins están elaborados con fresas frescas, ofreciendo un sabor auténtico y natural en cada mordisco. Decorados con una jugosa guinda en la cima y una lluvia de crujientes toppings de colores, no solo son deliciosos, sino también un festín para la vista. 
-                    <br>Perfectos para desayunos, meriendas o cualquier momento del día, estos muffins aportan un toque de alegría y sabor a cualquier ocasión. Disfruta de esta nueva creación que combina lo mejor de la repostería artesanal con un toque de diversión y color.
+                  <img
+                    class="item-product-img"
+                    loading="lazy"
+                    src="./img/cupcakes/cupcake04.jpg"
+                  />
+                  <div class="news-text">
+                    Presentamos nuestros nuevos Muffins de Fresa, una delicia
+                    que encantará a todos. <br /><br />Estos esponjosos muffins
+                    están elaborados con fresas frescas, ofreciendo un sabor
+                    auténtico y natural en cada mordisco. Decorados con una
+                    jugosa guinda en la cima y una lluvia de crujientes toppings
+                    de colores, no solo son deliciosos, sino también un festín
+                    para la vista. <br />Perfectos para desayunos, meriendas o
+                    cualquier momento del día, estos muffins aportan un toque de
+                    alegría y sabor a cualquier ocasión. Disfruta de esta nueva
+                    creación que combina lo mejor de la repostería artesanal con
+                    un toque de diversión y color.
                   </div>
                 </div>
               </div>
@@ -553,61 +870,152 @@
         </div>
         <!-- WAVES INFERIORES -->
         <div class="custom-shape-divider-top-1718731153 bottom-waves">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-              <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-              <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
           </svg>
         </div>
       </div>
-    <!-- INFORMATION -->
-    <div class="section-title" aria-labelledby="information" id="information" role="region"><h1>Información</h1></div>
-    <div class="container-fluid information">
-      <div class="info-text-container">
-        <p>Aquí se incluirá toda la información relativa a pedidos, pedidos mínimos, gastos, etc.</p>
+      <!-- INFORMATION -->
+      <div
+        class="section-title"
+        aria-labelledby="information"
+        id="information"
+        role="region"
+      >
+        <h1>Información</h1>
       </div>
-      <!-- WAVES INFERIORES -->
-      <div class="custom-shape-divider-top-1718731153 bottom-waves">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.8,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,70.86,47.69,72.05,99.41,120.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.1,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.4,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,41.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-        </svg>
+      <div class="container-fluid information">
+        <div class="info-text-container">
+          <p>
+            Aquí se incluirá toda la información relativa a pedidos, pedidos
+            mínimos, gastos, etc.
+          </p>
+        </div>
+        <!-- WAVES INFERIORES -->
+        <div class="custom-shape-divider-top-1718731153 bottom-waves">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.8,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,70.86,47.69,72.05,99.41,120.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.1,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.4,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,41.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
       </div>
-    </div>
-    <!-- CONTACT FORM -->
-    <div class="section-title" aria-labelledby="contact" id="contact" role="region"><h1>Contacto</h1>
-    </div>
-    <div class="container-fluid form-container">
-      <form action="https://javilonedev.es/formhandler.php" 
-        method="post"
-        id="yullsForm">
-        <div class="mb-3">
-          <label for="name" class="form-label" required>Nombre</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Escribe aquí tu nombre">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label" required>Email de contacto</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="tu_correo@electrónico.com">
-        </div>
-        <div class="mb-3">
-          <label for="order" class="form-label" required>Tu pedido</label>
-          <input type="text" class="form-control" id="order" name="order" placeholder="Selecciona un producto o escribe aquí tu encargo" />
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label" required>Escribe tu consulta</label>
-          <textarea class="form-control" id="message" name="message" rows="5"></textarea>
-        </div>
-        <div class="submitBtn"><input type="submit" class="btn btn-primary buy-btn" id="submitBuyBtn" value="Enviar"></div>
-        <div id="mensaje" class=""></div>
-      </form>
-    </div>
+      <!-- CONTACT FORM -->
+      <div
+        class="section-title"
+        aria-labelledby="contact"
+        id="contact"
+        role="region"
+      >
+        <h1>Contacto</h1>
+      </div>
+      <div class="container-fluid form-container">
+        <form
+          action="https://javilonedev.es/formhandler.php"
+          method="post"
+          id="yullsForm"
+        >
+          <div class="mb-3">
+            <label for="name" class="form-label" required>Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Escribe aquí tu nombre"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label" required
+              >Email de contacto</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="tu_correo@electrónico.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="order" class="form-label" required>Tu pedido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="order"
+              name="order"
+              placeholder="Selecciona un producto o escribe aquí tu encargo"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label" required
+              >Escribe tu consulta</label
+            >
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Detalla tu consulta lo máximo posible. No olvides indicar si necesitas opción sin gluten, número de personas, etc. Para opciones más detalladas entra en la página del artículo"
+            ></textarea>
+          </div>
+          <div class="submitBtn">
+            <input
+              type="submit"
+              class="btn btn-primary buy-btn"
+              id="submitBuyBtn"
+              value="Enviar"
+            />
+          </div>
+          <div id="mensaje" class=""></div>
+        </form>
+      </div>
     </main>
+    <!-- FOOTER -->
     <footer>
       <div class="footer">
-        <h3>Desarrollo y diseño de <span class="footer-highlight">Javilonedev</span>
-        para <br><span class="footer-highlight">Yull's Bakery</span>
-        <br><span class="footer-year">- 2024 -</span></h3>
+        <h3>
+          Desarrollo y diseño de
+          <span class="footer-highlight">Javilonedev</span> para <br /><span
+            class="footer-highlight"
+            >Yull's Bakery</span
+          >
+          <br /><span class="footer-year">- 2024 -</span>
+        </h3>
       </div>
     </footer>
     <script type="module" src="./js/main.js"></script>

@@ -1,65 +1,72 @@
-.form-container{
-    position: relative ;
-    height: auto;
-    width: 50%;
+.form-container {
+  position: relative;
+  height: auto;
+  width: 50%;
 
-    @media screen and (max-width: 720px){
-        width: 90%;
-    }
+  @media screen and (max-width: 720px) {
+    width: 90%;
+  }
 }
 
-.form-message-window{
-    background-color: white;
+.form-message-window {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.form-container {
+  label {
+    color: white;
+    font-family: $font-family-normal;
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 18px;
+  }
+
+  input::placeholder {
+    color: $color-background-4;
+  }
+
+  textarea {
+    font-size: 18px;
+  }
+
+  textarea::placeholder {
+    color: $color-background-4;
+  }
+
+  .buy-btn {
+    font-family: $font-family-normal;
+    font-size: 24px;
+    width: 300px;
     border-radius: 5px;
-    padding: 20px;
-    margin-top: 16px;
+    background-color: $color-background-5;
+
+    &:hover {
+      color: $color-background-2;
+      background-color: $color-background-3;
+    }
+
+    &:active {
+      background-color: $color-background-4;
+    }
+  }
 }
 
-.form-container{
-    label{
-        color: white;
-        font-family: $font-family-normal;
-        font-size: 24px;
-    }
-
-    input {
-        font-size: 18px;
-    }
-
-
-    input::placeholder {
-        color: $color-background-4;
-    }
-
-    .buy-btn{
-        font-family: $font-family-normal;
-        font-size: 24px;
-        width: 300px;
-        border-radius: 5px;
-        background-color: $color-background-5;
-
-        &:hover{
-            color: $color-background-2;
-            background-color: $color-background-3;
-        }
-
-        &:active{
-            background-color: $color-background-4;
-        }
-    }
-}
-
-.submitBtn{
-    text-align: center;
+.submitBtn {
+  text-align: center;
 }
 
 #mensaje {
-    text-align: center;
-    color: rgb(53, 185, 137);
-    font-family: $font-family-normal;
-    font-size: 24px;
-	-webkit-animation: jello-horizontal 0.9s both;
-	animation: jello-horizontal 0.9s both;
+  text-align: center;
+  color: rgb(53, 185, 137);
+  font-family: $font-family-normal;
+  font-size: 24px;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
 }
 
 /* ----------------------------------------------
@@ -70,63 +77,63 @@
  * ---------------------------------------------- */
 
 @-webkit-keyframes jello-horizontal {
-    0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-    30% {
-        -webkit-transform: scale3d(1.25, 0.75, 1);
-        transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-        -webkit-transform: scale3d(0.75, 1.25, 1);
-        transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-        -webkit-transform: scale3d(1.15, 0.85, 1);
-        transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-        -webkit-transform: scale3d(0.95, 1.05, 1);
-        transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-        -webkit-transform: scale3d(1.05, 0.95, 1);
-        transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 @keyframes jello-horizontal {
-    0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-    30% {
-        -webkit-transform: scale3d(1.25, 0.75, 1);
-        transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-        -webkit-transform: scale3d(0.75, 1.25, 1);
-        transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-        -webkit-transform: scale3d(1.15, 0.85, 1);
-        transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-        -webkit-transform: scale3d(0.95, 1.05, 1);
-        transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-        -webkit-transform: scale3d(1.05, 0.95, 1);
-            transform: scale3d(1.05, 0.95, 1);
-        }
-        100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
