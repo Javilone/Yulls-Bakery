@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="tartas artesanales, dulces, repostería, muffins, pasteles, pedidos personalizados, Madrid" />
+    <meta name="author" content="Javier López Lara" />
+    <meta name="description" content="Tartas, muffins y dulces artesanales hechos con amor en Yulls Bakery. Personaliza tu pedido para cualquier ocasión especial en Madrid." />
+    <link rel="icon" href="./img/cupcakeicon.svg" />
+    <title>Yulls Bakery - Tartas y dulces artesanales en Madrid.</title>
+    <link rel="stylesheet" href="./scss/styles.scss" />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar"></div>
+      <div class="navbar">
+        <div class="menu">
+          <!-- PRODUCTS DROPDOWN -->
+          <div class="dropdown">
+            <button class="btn dropdown-toggle myBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dulces</button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="./index.html#tartas">Tartas</a></li>
+              <li><a class="dropdown-item" href="./index.html#cupcakes">Cupcakes</a></li>
+              <li><a class="dropdown-item" href="./index.html#sweets">Dulces</a></li>
+              <li><a class="dropdown-item" href="./index.html#sweets">Galletas</a></li>
+            </ul>
+          </div>
+          <a href="#news" class="menu-hidden">Novedades</a>
+          <a href="./index.html"><img src="img/yulls_bakery_logo.png" alt="Yulls Bakery Logo" aria-labelledby="logo" id="logo" role="region" /></a>
+          <a href="./index.html#contact" class="menu-hidden">Contacto</a>
+          <a href="#information" class="menu-hidden">Información</a>
+          <!-- BURGER DROPDOWN -->
+          <div class="dropdown dropdown-hidden">
+            <button class="btn dropdown-toggle myBtn burger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <p>&#9776;</p>
+              <!-- Símbolo de hamburguesa -->
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+              <li><a class="dropdown-item" href="#news">Novedades</a></li>
+              <li><a class="dropdown-item" href="#contact">Contacto</a></li>
+              <li>
+                <a class="dropdown-item" href="#information">Información</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="goUp-btn">
+        <a href="#logo"><img src="./img/up-arrow.svg" alt="Flecha para subir la página" /></a>
+      </div>
+    </div>
+    <main>
+      <!-- WAVES UNDER NAVBAR -->
+      <div class="custom-shape-divider-top-1718731153">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <!-- CONTACT FORM -->
+      <div class="section-title" aria-labelledby="contact" id="contact" role="region">
+        <h1>Tarta Floral</h1>
+      </div>
+      <div class="container-fluid form-product">
+        <div class="product-form-img">
+          <img class="product-item product-blur" src="./img/tartas/tarta01.jpg" />
+          <img class="product-item" src="./img/tartas/tarta-flores-madres.jpeg" />
+          <img class="product-item product-blur" src="./img/tartas/tarta-cumpleanios.jpeg" />
+        </div>
+        <form action="https://javilonedev.es/formhandler.php" method="post" id="yullsForm">
+          <div class="mb-3">
+            <label for="name" class="form-label" required>Nombre</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Escribe aquí tu nombre" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label" required>Email de contacto</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="tu_correo@electrónico.com" />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Teléfono de contacto</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Para contactar contigo" />
+          </div>
+          <div class="mb-3">
+            <label for="gluten" class="form-label" required>Gluten</label>
+            <select class="form-select" id="gluten" name="gluten">
+              <option value="Con-Gluten" id="gluten" name="gluten">Sí</option>
+              <option value="SIN-Gluten" id="gluten" name="gluten">No</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="order" class="form-label" required>Tu pedido</label>
+            <input type="order" class="form-control" id="order" name="order" value="Tarta Floral" />
+          </div>
+          <div class="mb-3">
+            <label for="cake" class="form-label" required>Sabor del Bizcocho</label>
+            <select class="form-select" id="cake" name="cake">
+              <option value="Vainilla" id="cake" name="cake">Bizcocho de Vainilla</option>
+              <option value="Chocolate" id="cake" name="cake">Bizcocho de Chocolate</option>
+              <option value="Red-Velvet" id="cake" name="cake">Bizcocho Red Velvet</option>
+              <option value="Zanahoria" id="cake" name="cake">Bizcocho de Zanahoria</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="frosting" class="form-label" required>Sabor del Frosting (Crema) - Relleno</label>
+            <select class="form-select" id="frosting" name="frosting">
+              <option value="Cholate-Blanco" id="frosting" name="frosting">Chocolate blanco</option>
+              <option value="Queso" id="frosting" name="frosting">Queso</option>
+              <option value="Vainilla" id="frosting" name="frosting">Vainilla</option>
+              <option value="Limón" id="frosting" name="frosting">Limón</option>
+              <option value="Nocilla" id="frosting" name="frosting">Nocilla</option>
+              <option value="Nutella" id="frosting" name="frosting">Nutella</option>
+              <option value="Dulce-De-Leche" id="frosting" name="frosting">Dulce de leche</option>
+              <option value="Oreo" id="frosting" name="frosting">Oreo</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="portions" class="form-label" required>Porciones</label>
+            <select class="form-select" id="portions" name="portions">
+              <option value="15cm.10/12-Raciones" id="portions" name="portions">15 cm de diámetro. 10-12 raciones. Desde 45€</option>
+              <option value="20cm.18/20-Raciones" id="portions" name="portions">20 cm de diámetro. 18-20 raciones. Desde 55€</option>
+              <option value="25cm.28/30-Raciones" id="portions" name="portions">25 cm de diámetro. 28-30 raciones. Desde 65€.</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label" required>Escribe tu consulta</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="7"
+              placeholder="Detalla tu consulta lo máximo posible. No olvides indicar si necesitas opción sin gluten, número de personas, fechas, etc. 
+Puedes contactar con nosotros en la sección 'Contacto'."
+            ></textarea>
+          </div>
+          <div class="submitBtn">
+            <input type="submit" class="btn btn-primary buy-btn" id="submitBuyBtn" value="Enviar" />
+          </div>
+          <div id="mensaje" class=""></div>
+        </form>
+      </div>
+      <!-- INFORMATION -->
+      <div class="section-title" aria-labelledby="information" id="information" role="region">
+        <h1>Información</h1>
+      </div>
+      <div class="container-fluid information">
+        <div class="info-text-container">
+          <p>Aquí se incluirá toda la información relativa a pedidos, pedidos mínimos, gastos, etc.</p>
+        </div>
+        <!-- WAVES INFERIORES -->
+        <div class="custom-shape-divider-top-1718731153 bottom-waves">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.8,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,70.86,47.69,72.05,99.41,120.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.1,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.4,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,41.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+          </svg>
+        </div>
+      </div>
+      <!-- NEWS -->
+      <div class="section-title" aria-labelledby="news" id="news" role="region">
+        <h1>Novedades</h1>
+      </div>
+      <div class="container-fluid news-section">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <!-- NEWS 1 -->
+          <div class="accordion-item">
+            <h2>
+              <button class="accordion-button news-text-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Novedades en Yull's Bakery: ¡Cupcakes festivos de colores! 🌈
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <div class="container-fluid news-container">
+                  <div class="news-img-container">
+                    <img class="item-product-img" loading="lazy" src="./img/cupcakes/cupcakes-colores-1.jpeg" />
+                  </div>
+                  <div class="news-text">
+                    ¡Celebra el orgullo con nuestros vibrantes cupcakes de colores! <br /><br />Cada cupcake está cuidadosamente horneado con una base esponjosa y decorado con un delicioso frosting de mantequilla, teñido en los colores del arco iris. Estos
+                    cupcakes no solo son una delicia para el paladar, sino también una explosión de alegría visual, perfectos para cualquier evento del Orgullo LGBTQ+. <br /><br />Con su sabor irresistible y su aspecto festivo, son ideales para compartir
+                    con amigos y seres queridos. Además, cada compra apoya la inclusión y la diversidad. <br /><br />¡Haz de tu celebración del orgullo un evento aún más especial con nuestros cupcakes coloridos!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- NEWS 2 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button news-text-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                🌹 Algo muy especial para el Día de la Madre 🌹
+              </button>
+            </h3>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <div class="container-fluid news-container">
+                  <div class="news-img-container">
+                    <img class="item-product-img" loading="lazy" src="./img/tartas/tarta-flores-madres.jpeg" />
+                  </div>
+                  <div class="news-text">
+                    Celebra el Día de la Madre con nuestra exclusiva Tarta de Rosas y Vainilla, diseñada para honrar a las mamás con elegancia y dulzura. <br /><br />Esta hermosa tarta presenta capas esponjosas de bizcocho de vainilla, intercaladas con una
+                    suave crema de fresa. La cobertura, de un delicado frosting blanco, está finamente decorada con toques de rosa y adornada con flores reales, aportando un toque de belleza natural y fragante. <br />Cada bocado es una combinación perfecta
+                    de sabor y sofisticación, haciendo de esta tarta el regalo ideal para demostrar tu amor y aprecio en este día tan especial.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- NEWS 3 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button news-text-title" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">🍰 ¡Tartas personalizadas!</button>
+            </h3>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <div class="container-fluid news-container">
+                  <img class="item-product-img" loading="lazy" src="./img/tartas/tarta-tematica-horiz.jpeg" />
+                  <div class="news-text">
+                    Nuestras tartas temáticas son el toque perfecto para cualquier celebración. Diseñadas a medida, cada una de nuestras creaciones está inspirada en tus personajes, colores o estilos favoritos, haciéndolas únicas y personalizadas para cada
+                    ocasión. Desde cumpleaños hasta eventos especiales, nuestras tartas no solo son visualmente impresionantes, sino que también están elaboradas con ingredientes de la más alta calidad, garantizando un sabor irresistible.
+                    <br /><br />¡Haz de tu próxima fiesta algo inolvidable con nuestras tartas temáticas!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- WAVES INFERIORES -->
+        <div class="custom-shape-divider-top-1718731153 bottom-waves">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+              opacity=".25"
+              class="shape-fill"
+            ></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+          </svg>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer">
+        <h3>
+          Desarrollo y diseño de
+          <span class="footer-highlight">Javilonedev</span> para <br /><span class="footer-highlight">Yull's Bakery</span> <br /><span class="footer-year">- 2024 -</span>
+        </h3>
+      </div>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+</html>
