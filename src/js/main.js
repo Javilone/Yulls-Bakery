@@ -7,6 +7,8 @@ import * as bootstrap from "bootstrap";
 import "./productsButtons.js";
 import "./formHandles.js";
 
+export const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
+
 // MAIN CAROUSEL
 const myCarouselElement = document.querySelector("#carouselFade");
 const carousel = new bootstrap.Carousel(myCarouselElement, {
