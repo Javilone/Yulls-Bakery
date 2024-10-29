@@ -1,3 +1,5 @@
+import * as bootstrap from "bootstrap";
+
 // MAIN CAROUSEL
 const myCarouselElement = document.querySelector("#carouselFade");
 const carousel = new bootstrap.Carousel(myCarouselElement, {
