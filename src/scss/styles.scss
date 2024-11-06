@@ -15,14 +15,30 @@ body {
 }
 
 .carousel {
-  box-shadow: 20px 25px 15px white;
+  box-shadow: 2px 2px 35px white;
   overflow: hidden;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  max-width: 800px;
+  margin: 30px auto 0 auto;
 
   img {
     border-bottom: 1px solid black;
     animation-name: carrusel;
     animation-duration: 6s;
   }
+
+  @media screen and (max-width: 720px) {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0px;
+  }
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
 }
 
 .section-title {
@@ -57,4 +73,9 @@ body {
   background-color: $color-background-4;
   border-radius: 15px;
   padding: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
