@@ -5,10 +5,33 @@
 }
 
 .info-text-container {
-  height: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 40px;
-  font-family: $font-family-second;
+  font-family: $font-family-normal;
   font-size: 1.2rem;
+  align-items: center;
+  text-align: center;
   background-color: $color-background;
+
+  @media screen and (max-width: 720px) {
+    padding: 20px;
+  }
+}
+
+.info-text-container > table {
+  width: 40%;
+  margin: 12px 0 24px 0;
+  background-color: white;
+  border-radius: 20px;
+
+  @media screen and (max-width: 1080px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 720px) {
+    width: 100%;
+  }
 }
