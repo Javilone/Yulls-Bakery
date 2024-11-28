@@ -21,18 +21,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Dirección de correo del destinatario y asunto del correo
-    $recipient = "contacto@javilonedev.es";
+    $recipient = "yullsbakery22@gmail.com";
     $subject = "Yull's Bakery - Nuevo mensaje de $email";
 
     // Contenido del correo electrónico
     $email_content = "NOMBRE: $name\n";
     $email_content .= "EMAIL: $email\n";
-    $email_content .= "TELÉFONO: $phone\n";
-    $email_content .= "GLUTEN: $gluten\n";
+/*    $email_content .= "TELÉFONO: $phone\n";
+   $email_content .= "GLUTEN: $gluten\n"; */
     $email_content .= "PEDIDO: $order\n";
-    $email_content .= "TIPO DE BIZCOCHO: $cake\n";
+/*    $email_content .= "TIPO DE BIZCOCHO: $cake\n";
     $email_content .= "SABOR DE FROSTING: $frosting\n";
-    $email_content .= "PORCIONES: $portions\n";
+    $email_content .= "PORCIONES: $portions\n"; */
     $email_content .= "MENSAJE:\n$message\n";
 
     // Cabeceras del correo
